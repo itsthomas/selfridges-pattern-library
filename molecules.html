@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Selfridges pattern library</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+      href="/assets/vendor/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+      href="/assets/vendor/aem.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+      href="/assets/css/main.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header class="sandbox__header">
+        <img src="/assets/img/logo.svg" class="sandbox__logo" />
+      </header>
+
+      <div class="row sandbox__nav">
+        <div class="col-xs-12">
+          <a class="heading--sub link" href="/colours.html">Colours</a>
+          <a class="heading--sub link" href="/atoms.html">Atoms</a>
+          <a class="heading--sub link" href="/molecules.html">Molecules</a>
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- =========================================
+                Order summary - Empty bag
+        ========================================== -->
+        <div class="col-xs-12">
+          <h1 class="heading">Order summary</h1>
+          <hr class="rule" />
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <p class="text--bold">Empty bag</p>
+
+              <div class="order-summary panel">
+                <h2 class="heading">Order summary</h2>
+                <hr class="rule" />
+                <p class="text">Your shopping bag is empty.</p>
+                <button class="button--full">Start shopping</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- =========================================
+                Order summary - Default state
+        ========================================== -->
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <p class="text--bold">Default state</p>
+
+              <div class="order-summary panel">
+                <h2 class="heading">Order summary</h2>
+                <hr class="rule" />
+
+                <div class="row">
+                  <div class="col-xs-6 text mb-0">My bag (2 items)</div>
+                  <div class="col-xs-6 text text--right mb-0">£45.00</div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12">
+                    <a class="link--block text">Add promotional code</a>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-9 heading--small--light mb-0">
+                    Total (excluding delivery)
+                  </div>
+                  <div class="col-xs-3 heading--small--light text--right mb-0">
+                    £45.00
+                  </div>
+                </div>
+
+                <button class="button--full">Secure checkout</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- =========================================
+            Order summary - Add promotion code open
+        ========================================== -->
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <p class="text--bold">Add promotion code open</p>
+
+              <div class="order-summary panel">
+                <h2 class="heading">Order summary</h2>
+                <hr class="rule" />
+
+                <div class="row">
+                  <div class="col-xs-6 text mb-0">My bag (2 items)</div>
+                  <div class="col-xs-6 text text--right mb-0">£45.00</div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12">
+                    <p class="text mb-0">Add promotional code</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12">
+                    <label class="text-field text-field--simple">
+                      <input
+                        class="control"
+                        type="text"
+                        name="first_name"
+                        placeholder="Enter code"
+                      />
+                      <button
+                        class="order-summary__add-promo button--full heading--small--light"
+                      >
+                        Add
+                      </button>
+                    </label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-9 heading--small--light mb-0">
+                    Total (excluding delivery)
+                  </div>
+                  <div class="col-xs-3 heading--small--light text--right mb-0">
+                    £45.00
+                  </div>
+                </div>
+
+                <button class="button--full">Secure checkout</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- =========================================
+                Order summary - Promostion closes
+        ========================================== -->
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <p class="text--bold">Promotions closed</p>
+
+              <div class="order-summary panel">
+                <h2 class="heading">Order summary</h2>
+                <hr class="rule" />
+
+                <div class="row">
+                  <div class="col-xs-12">
+                    <blockquote class="alert--success text--bold mb-0">
+                      The promotion code SELFCCE has been applied
+                    </blockquote>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-xs-6 text mb-0">My bag (2 items)</div>
+                  <div class="col-xs-6 text text--right mb-0">£45.00</div>
+                </div>
+                <div class="order-summary__toggle-promo row">
+                  <div class="col-xs-5 text mb-0">Promotions</div>
+                  <div class="col-xs-4 text text--center mb-0">-£10.00</div>
+                  <div class="col-xs-3 text text--right mb-0">
+                    View
+                    <img class="icon" src="/assets/img/icon/chevron-down.svg" />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12">
+                    <a class="link--block text">Add promotional code</a>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-9 heading--small--light mb-0">
+                    Total (excluding delivery)
+                  </div>
+                  <div class="col-xs-3 heading--small--light text--right mb-0">
+                    £35.00
+                  </div>
+                </div>
+
+                <button class="button--full">Secure checkout</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- =========================================
+          Order summary - Promotion code SELFCCE applied
+          ========================================== -->
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <p class="text--bold">Promotions open</p>
+
+              <div class="order-summary panel">
+                <h2 class="heading">Order summary</h2>
+                <hr class="rule" />
+
+                <div class="row">
+                  <div class="col-xs-12">
+                    <blockquote class="alert--success text--bold mb-0">
+                      The promotion code SELFCCE has been applied
+                    </blockquote>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-xs-6 text mb-0">My bag (2 items)</div>
+                  <div class="col-xs-6 text text--right mb-0">£45.00</div>
+                </div>
+                <div class="order-summary__toggle-promo row">
+                  <div class="col-xs-5 text mb-0">Promotions</div>
+                  <div class="col-xs-4 text text--center mb-0">-£10.00</div>
+                  <div class="col-xs-3 text text--right mb-0">
+                    Hide
+                    <img class="icon" src="/assets/img/icon/chevron-up.svg" />
+                  </div>
+                </div>
+                <div class="row order-summary__promo-code">
+                  <div class="col-xs-6 mb-0">
+                    <img class="icon" src="/assets/img/icon/cross.svg" />
+                    <span class="text">SELFCCE</span>
+                  </div>
+                  <div class="col-xs-6 text text--right mb-0">-£10.00</div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12">
+                    <a class="link--block text">Add promotional code</a>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-9 heading--small--light mb-0">
+                    Total (excluding delivery)
+                  </div>
+                  <div class="col-xs-3 heading--small--light text--right mb-0">
+                    £35.00
+                  </div>
+                </div>
+
+                <button class="button--full">Secure checkout</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- ============================================
+          Order summary - Multiple promotions added - Open
+          ============================================= -->
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <p class="text--bold">
+                Multiple promotions added, add promotion code open
+              </p>
+
+              <div class="order-summary panel">
+                <h2 class="heading">Order summary</h2>
+                <hr class="rule" />
+
+                <div class="row">
+                  <div class="col-xs-12">
+                    <blockquote class="alert--success text--bold mb-0">
+                      The promotion code SELFDELIVERFREE has been applied
+                    </blockquote>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-xs-6 text mb-0">My bag (2 items)</div>
+                  <div class="col-xs-6 text text--right mb-0">£45.00</div>
+                </div>
+                <div class="order-summary__toggle-promo row">
+                  <div class="col-xs-5 text mb-0">Promotions</div>
+                  <div class="col-xs-4 text text--center mb-0">-£10.00</div>
+                  <div class="col-xs-3 text text--right mb-0">
+                    Hide
+                    <img class="icon" src="/assets/img/icon/chevron-up.svg" />
+                  </div>
+                </div>
+                <div class="row order-summary__promo-code">
+                  <div class="col-xs-6 mb-0">
+                    <img class="icon" src="/assets/img/icon/cross.svg" />
+                    <span class="text">SELFCCE</span>
+                  </div>
+                  <div class="col-xs-6 text text--right mb-0">-£10.00</div>
+                </div>
+                <div class="row order-summary__promo-code">
+                  <div class="col-xs-6 mb-0">
+                    <img class="icon" src="/assets/img/icon/cross.svg" />
+                    <span class="text">SELFDELIVERFREE</span>
+                  </div>
+                  <div class="col-xs-6 text text--right mb-0">-£5.00</div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12">
+                    <p class="text mb-0">Add promotional code</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12">
+                    <label class="text-field text-field--simple">
+                      <input
+                        class="control"
+                        type="text"
+                        name="first_name"
+                        placeholder="Enter code"
+                      />
+                      <button
+                        class="order-summary__add-promo button--full heading--small--light"
+                      >
+                        Add
+                      </button>
+                    </label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-9 heading--small--light mb-0">
+                    Total (excluding delivery)
+                  </div>
+                  <div class="col-xs-3 heading--small--light text--right mb-0">
+                    £30.00
+                  </div>
+                </div>
+
+                <button class="button--full">Secure checkout</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- ============================================
+                 Order summary - Selfridges+ added
+          ============================================= -->
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <p class="text--bold">Selfridges+ added</p>
+
+              <div class="order-summary panel">
+                <h2 class="heading">Order summary</h2>
+                <hr class="rule" />
+
+                <div class="row">
+                  <div class="col-xs-12">
+                    <blockquote class="alert--info text--bold mb-0">
+                      There are no delivery charges with Selfridges+
+                    </blockquote>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-xs-6 text mb-0">My bag (2 items)</div>
+                  <div class="col-xs-6 text text--right mb-0">£45.00</div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12">
+                    <a class="link--block text">Add promotional code</a>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-9 heading--small--light mb-0">
+                    Total (excluding delivery)
+                  </div>
+                  <div class="col-xs-3 heading--small--light text--right mb-0">
+                    £45.00
+                  </div>
+                </div>
+
+                <button class="button--full">Secure checkout</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <h1 class="heading">Basket product</h1>
+          <hr class="rule" />
+
+          <!-- =========================================
+                     Shopping Bag - Default
+          ========================================== -->
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-8">
+              <p class="text--bold">Default</p>
+
+              <div class="basket-product">
+                <div class="basket-product__image">
+                  <img
+                    class="thumbnail"
+                    src="/assets/img/xs/product.jpg"
+                    alt="Example product"
+                    title="Example product"
+                  />
+                </div>
+                <div class="basket-product__details">
+                  <h3 class="heading--sub">Self portrait</h3>
+                  <p class="text">Off-the-shoulder guipure-lace mini dress</p>
+                  <h4 class="heading--sub">£45.00</h4>
+                  <a href="" class="basket-product__remove">
+                    <img
+                      class="icon"
+                      src="/assets/img/icon/delete.svg"
+                      alt="Remove example product from your bag"
+                    />
+                  </a>
+                  <div class="row">
+                    <div class="col-xs-12 col-md-8 col-lg-6">
+                      <label class="basket-product__qty select-field">
+                        <span class="text--label">Quantity</span>
+                        <select class="control" name="quantity">
+                          <option value="xxs">1</option>
+                          <option value="xs">2</option>
+                          <option value="sm">3</option>
+                        </select>
+                      </label>
+
+                      <div class="basket-product__size">
+                        <p class="text mb-0">Size: 8</p>
+                      </div>
+
+                      <div class="basket-product__colour swatch-label">
+                        <img class="swatch" src="/assets/img/swatch/pink.jpg" />
+                        <span class="text">Pink</span>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4 col-lg-6">
+                      <div class="basket-product__links">
+                        <div class="basket-product__wishlist">
+                          <a class="link--icon">
+                            <img
+                              class="icon"
+                              src="/assets/img/icon/favourite.svg"
+                            />
+                            <span class="text">Move to wishlist</span>
+                          </a>
+                        </div>
+                        <div class="basket-product__edit">
+                          <a class="link--icon">
+                            <img class="icon" src="/assets/img/icon/edit.svg" />
+                            <span class="text">Edit</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- =========================================
+                Shopping Bag - With partner icon
+          ========================================== -->
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-8">
+              <p class="text--bold">With partner icon</p>
+
+              <div class="basket-product">
+                <div class="basket-product__image">
+                  <img
+                    class="thumbnail"
+                    src="/assets/img/xs/product.jpg"
+                    alt="Example product"
+                    title="Example product"
+                  />
+                </div>
+                <div class="basket-product__details">
+                  <h3 class="heading--sub">Self portrait</h3>
+                  <p class="text">Off-the-shoulder guipure-lace mini dress</p>
+                  <div class="basket-product__partner">
+                    <img
+                      class="basket-product__partner-icon icon"
+                      src="/assets/img/icon/buying-better.jpg"
+                    />
+                    <span class="basket-product__partner-text text--bold"
+                      >Buying better</span
+                    >
+                  </div>
+                  <h4 class="heading--sub">£45.00</h4>
+                  <a href="" class="basket-product__remove">
+                    <img
+                      class="icon"
+                      src="/assets/img/icon/delete.svg"
+                      alt="Remove example product from your bag"
+                    />
+                  </a>
+                  <div class="row">
+                    <div class="col-xs-12 col-md-8 col-lg-6">
+                      <label class="basket-product__qty select-field">
+                        <span class="text--label">Quantity</span>
+                        <select class="control" name="quantity">
+                          <option value="xxs">1</option>
+                          <option value="xs">2</option>
+                          <option value="sm">3</option>
+                        </select>
+                      </label>
+
+                      <div class="basket-product__size">
+                        <p class="text mb-0">Size: 10</p>
+                      </div>
+
+                      <div class="basket-product__colour swatch-label">
+                        <img class="swatch" src="/assets/img/swatch/pink.jpg" />
+                        <span class="text">Pink</span>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4 col-lg-6">
+                      <div class="basket-product__links">
+                        <div class="basket-product__wishlist">
+                          <a class="link--icon">
+                            <img
+                              class="icon"
+                              src="/assets/img/icon/favourite.svg"
+                            />
+                            <span class="text">Move to wishlist</span>
+                          </a>
+                        </div>
+                        <div class="basket-product__edit">
+                          <a class="link--icon">
+                            <img class="icon" src="/assets/img/icon/edit.svg" />
+                            <span class="text">Edit</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- =========================================
+              Shopping Bag - Click & collect only
+          ========================================== -->
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-8">
+              <p class="text--bold">Click and collect only</p>
+
+              <div class="basket-product">
+                <div class="basket-product__image">
+                  <img
+                    class="thumbnail"
+                    src="/assets/img/xs/product.jpg"
+                    alt="Example product"
+                    title="Example product"
+                  />
+                </div>
+                <div class="basket-product__details">
+                  <h3 class="heading--sub">Self portrait</h3>
+                  <p class="text">Off-the-shoulder guipure-lace mini dress</p>
+                  <h4 class="heading--sub">£45.00</h4>
+                  <a href="" class="basket-product__remove">
+                    <img
+                      class="icon"
+                      src="/assets/img/icon/delete.svg"
+                      alt="Remove example product from your bag"
+                    />
+                  </a>
+                  <div class="row">
+                    <div class="col-xs-12 col-md-8 col-lg-6">
+                      <label class="basket-product__qty select-field">
+                        <span class="text--label">Quantity</span>
+                        <select class="control" name="quantity">
+                          <option value="xxs">1</option>
+                          <option value="xs">2</option>
+                          <option value="sm">3</option>
+                        </select>
+                      </label>
+
+                      <div class="basket-product__size">
+                        <p class="text mb-0">Size: 10</p>
+                      </div>
+
+                      <div class="basket-product__colour swatch-label">
+                        <img class="swatch" src="/assets/img/swatch/pink.jpg" />
+                        <span class="text">Pink</span>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4 col-lg-6">
+                      <div class="basket-product__links">
+                        <div class="basket-product__wishlist">
+                          <a class="link--icon">
+                            <img
+                              class="icon"
+                              src="/assets/img/icon/favourite.svg"
+                            />
+                            <span class="text">Move to wishlist</span>
+                          </a>
+                        </div>
+                        <div class="basket-product__edit">
+                          <a class="link--icon">
+                            <img class="icon" src="/assets/img/icon/edit.svg" />
+                            <span class="text">Edit</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="alert--info text--bold">
+                Only available via Click and Collect
+              </p>
+            </div>
+          </div>
+
+          <!-- =========================================
+                  Shopping Bag - Delivery only
+          ========================================== -->
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-8">
+              <p class="text--bold">Delivery only</p>
+
+              <div class="basket-product">
+                <div class="basket-product__image">
+                  <img
+                    class="thumbnail"
+                    src="/assets/img/xs/product.jpg"
+                    alt="Example product"
+                    title="Example product"
+                  />
+                </div>
+                <div class="basket-product__details">
+                  <h3 class="heading--sub">Self portrait</h3>
+                  <p class="text">Off-the-shoulder guipure-lace mini dress</p>
+                  <h4 class="heading--sub">£45.00</h4>
+                  <a href="" class="basket-product__remove">
+                    <img
+                      class="icon"
+                      src="/assets/img/icon/delete.svg"
+                      alt="Remove example product from your bag"
+                    />
+                  </a>
+                  <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                      <label class="basket-product__qty select-field">
+                        <span class="text--label">Quantity</span>
+                        <select class="control" name="quantity">
+                          <option value="xxs">1</option>
+                          <option value="xs">2</option>
+                          <option value="sm">3</option>
+                        </select>
+                      </label>
+
+                      <div class="basket-product__size">
+                        <p class="text mb-0">Size: 10</p>
+                      </div>
+
+                      <div class="basket-product__colour swatch-label">
+                        <img class="swatch" src="/assets/img/swatch/pink.jpg" />
+                        <span class="text">Pink</span>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4 col-lg-6">
+                      <div class="basket-product__links">
+                        <div class="basket-product__wishlist">
+                          <a class="link--icon">
+                            <img
+                              class="icon"
+                              src="/assets/img/icon/favourite.svg"
+                            />
+                            <span class="text">Move to wishlist</span>
+                          </a>
+                        </div>
+                        <div class="basket-product__edit">
+                          <a class="link--icon">
+                            <img class="icon" src="/assets/img/icon/edit.svg" />
+                            <span class="text">Edit</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="alert--info text--bold">
+                Only available via UK standard delivery
+              </p>
+            </div>
+          </div>
+
+          <!-- =========================================
+                  Shopping Bag - Out of stock
+          ========================================== -->
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-8">
+              <p class="text--bold">Out of stock</p>
+
+              <div class="basket-product--no-stock">
+                <div class="basket-product__image">
+                  <img
+                    class="thumbnail"
+                    src="/assets/img/xs/product.jpg"
+                    alt="Example product"
+                    title="Example product"
+                  />
+                </div>
+                <div class="basket-product__details">
+                  <h3 class="heading--sub">Self portrait</h3>
+                  <p class="text">Off-the-shoulder guipure-lace mini dress</p>
+                  <a href="" class="basket-product__remove">
+                    <img
+                      class="icon"
+                      src="/assets/img/icon/delete.svg"
+                      alt="Remove example product from your bag"
+                    />
+                  </a>
+                  <div class="row">
+                    <div class="col-xs-12 col-md-8 col-lg-6">
+                      <div class="alert--error">
+                        <p class="text--bold">
+                          This item is currently out of stock and will be
+                          removed before you checkout.
+                        </p>
+                        <p class="text">
+                          You can edit your item to see if there is another
+                          option available or move to your Wish list to save it.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4 col-lg-6">
+                      <div class="basket-product__links">
+                        <div class="basket-product__wishlist">
+                          <a class="link--icon">
+                            <img
+                              class="icon"
+                              src="/assets/img/icon/favourite.svg"
+                            />
+                            <span class="text">Move to wishlist</span>
+                          </a>
+                        </div>
+                        <div class="basket-product__edit">
+                          <a class="link--icon">
+                            <img class="icon" src="/assets/img/icon/edit.svg" />
+                            <span class="text">Edit</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- =========================================
+                  Shopping Bag - Gift Message
+        ========================================== -->
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-8">
+            <p class="text--bold">Gift Messages</p>
+
+            <div class="basket-product">
+              <div class="basket-product__image">
+                <img
+                  class="thumbnail"
+                  src="/assets/img/xs/product.jpg"
+                  alt="Example product"
+                  title="Example product"
+                />
+              </div>
+              <div class="basket-product__details">
+                <h3 class="heading--sub">Self portrait</h3>
+                <p class="text">Off-the-shoulder guipure-lace mini dress</p>
+                <h4 class="heading--sub">£45.00</h4>
+                <a href="" class="basket-product__remove">
+                  <img
+                    class="icon"
+                    src="/assets/img/icon/delete.svg"
+                    alt="Remove example product from your bag"
+                  />
+                </a>
+                <div class="row">
+                  <div class="col-xs-12 col-md-8 col-lg-6">
+                    <label class="basket-product__qty select-field">
+                      <span class="text--label">Quantity</span>
+                      <select class="control" name="quantity">
+                        <option value="xxs">1</option>
+                        <option value="xs">2</option>
+                        <option value="sm">3</option>
+                      </select>
+                    </label>
+
+                    <div class="basket-product__size">
+                      <p class="text mb-0">Size: 8</p>
+                    </div>
+
+                    <div class="basket-product__colour swatch-label">
+                      <img class="swatch" src="/assets/img/swatch/pink.jpg" />
+                      <span class="text">Pink</span>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-4 col-lg-6">
+                    <div class="basket-product__links">
+                      <div class="basket-product__wishlist">
+                        <a class="link--icon">
+                          <img
+                            class="icon"
+                            src="/assets/img/icon/favourite.svg"
+                          />
+                          <span class="text">Move to wishlist</span>
+                        </a>
+                      </div>
+                      <div class="basket-product__edit">
+                        <a class="link--icon">
+                          <img class="icon" src="/assets/img/icon/edit.svg" />
+                          <span class="text">Edit</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12 col-md-10">
+                      <div class="text--icon">
+                    <img class="icon" src="/assets/img/icon/edit.svg" />
+                    <span class="text--bold">Gift Messages</span>
+                    </div>
+                    <p class="text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ratione perferendis cum numquam!
+                    </p>
+                  </div>
+                </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script id="__bs_script__">
+      //<![CDATA[
+      document.write(
+        "<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.26.3'><\/script>".replace(
+          'HOST',
+          location.hostname
+        )
+      );
+      //]]>
+    </script>
+    <script src="/assets/js/images.js" type="text/javascript"></script>
+  </body>
+</html>

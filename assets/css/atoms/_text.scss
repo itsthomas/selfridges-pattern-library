@@ -1,0 +1,61 @@
+@import '../helpers/colors';
+@import '../helpers/spacing';
+
+.text {
+  color: $mine-shaft;
+  font-family: 'Avalon Regular', sans-serif;
+  font-size: 1.4rem;
+  letter-spacing: $letter-spacing;
+  margin: 0 0 10px 0;
+}
+
+.text--strike {
+  @extend .text;
+  text-decoration: line-through;
+}
+
+.text--small {
+  @extend .text;
+  font-size: 1.2rem;
+  line-height: 1.33;
+}
+
+.text--label {
+  @extend .text--small;
+  color: $emperor;
+}
+
+.text--bold {
+  @extend .text;
+  color: inherit;
+  font-family: 'Avalon Demi', sans-serif;
+}
+
+.text--error,
+.text--highlight {
+  @extend .text;
+  color: $monza;
+}
+
+.text--icon {
+
+  margin-bottom: 10px;
+
+  [class*='text'],
+  [class*='text--bold'] {
+    margin: 0;
+    padding-left: 8px;
+  }
+
+  [class*='icon'] {
+    flex-shrink: 0;
+  }
+}
+
+.text--right {
+  text-align: right;
+}
+
+.text--center {
+  text-align: center;
+}

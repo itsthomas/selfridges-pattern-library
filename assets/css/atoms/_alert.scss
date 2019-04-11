@@ -1,0 +1,24 @@
+@import '../helpers/colors';
+@import './text';
+
+%alert {
+  @extend .text;
+  border-left: 4px solid $mine-shaft;
+  padding-left: 10px;
+}
+
+.alert--error {
+  @extend %alert;
+  @extend .text--error;
+  border-left-color: $monza;
+}
+
+.alert--info {
+  @extend %alert;
+  border-left-color: $mariner;
+}
+
+.alert--success {
+  @extend %alert;
+  border-left-color: $apple;
+}

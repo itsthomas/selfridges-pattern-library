@@ -1,0 +1,13 @@
+{
+  "name": "pattern-library",
+  "version": "0.1.0",
+  "description": "Selfridges pattern library",
+  "author": "Alex Tiley <alex@tiley.io>",
+  "scripts": {
+    "start": "sass assets/css --watch & browser-sync start -s -w --no-ui"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "sass": "^1.17.3"
+  }
+}

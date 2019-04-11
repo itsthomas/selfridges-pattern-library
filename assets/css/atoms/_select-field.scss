@@ -1,0 +1,55 @@
+@import '../helpers/colors';
+@import '../helpers/placeholders';
+
+.select-field {
+  border-bottom: 1px solid $silver;
+  cursor: pointer;
+  display: block;
+  position: relative;
+
+  // Apply top padding to a direct sibling text component
+  & + [class*='text'] {
+    display: block;
+    padding-top: 10px;
+  }
+
+  // Style errors
+  &--error {
+    border-bottom-color: $monza;
+  }
+
+  &--error + [class*='text'] {
+    color: $monza;
+  }
+
+  // Label styles
+  .text--label {
+    display: block;
+    margin: 0;
+    padding: 0 0 10px 0;
+  }
+
+  // Style the custom control
+  .control {
+    @extend %control-base;
+    background: url('/assets/img/icon/chevron-down.svg') right calc(100% - 6px) no-repeat;
+    border: 0;
+    cursor: pointer;
+    padding: 0 10px 5px;
+  }
+
+  .control:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  // Support for icons
+  .select-icon {
+    display: flex;
+    align-items: center;
+  }
+  .select-icon .icon {
+    margin-bottom: 5px;
+  }
+}
+

@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'Avalon Regular';
+  src: url('/assets/font/Avalon-Book-webfont.woff');
+  src: url('/assets/font/Avalon-Book-webfont.woff') format('woff'), url('/assets/font/Avalon-Book-webfont.woff2') format('woff2'), url('/assets/font/Avalon-Book-webfont.svg#avalonregular') format('svg'), url('/assets/font/Avalon-Book-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avalon Bold';
+  src: url('/assets/font/Avalon-Bold-webfont.ttf');
+  src: url('/assets/font/Avalon-Bold-webfont.ttf') format('truetype'), url('/assets/font/Avalon-Bold-webfont.woff2') format('woff2'), url('/assets/font/Avalon-Bold-webfont.woff') format('woff'), url('/assets/font/Avalon-Bold-webfont.svg#avalon_mediumbold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avalon Demi';
+  src: url('/assets/font/Avalon-Demi-webfont.woff');
+  src: url('/assets/font/Avalon-Demi-webfont.woff?#iefix') format('embedded-opentype'), url('/assets/font/Avalon-Demi-webfont.woff') format('woff'), url('/assets/font/Avalon-Demi-webfont.ttf') format('truetype'), url('/assets/font/Avalon-Demi-webfont.svg#avalonbold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

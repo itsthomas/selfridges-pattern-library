@@ -1,0 +1,47 @@
+@import '../helpers/breakpoints';
+@import '../helpers/colors';
+@import '../helpers/fonts';
+@import '../helpers/placeholders';
+@import '../helpers/spacing';
+
+.button {
+  @extend %button-base;
+  background: $candlelight;
+  border: 0;
+  display: block;
+  font-family: 'Avalon Demi', sans-serif;
+  font-size: 1.6rem;
+  min-height: 48px;
+  padding: 12px;
+  text-align: center;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.button--sub {
+  @extend .button;
+  background: $white;
+  border: 1px solid $silver;
+}
+
+.button--full {
+  @extend .button;
+}
+
+.button--sub--full,
+.button--full--sub {
+  @extend .button--sub;
+}
+
+@media (min-width: $tablet) {
+  .button,
+  .button--sub {
+    max-width: 335px;
+  }
+
+  .button--full,
+  .button--sub--full,
+  .button--full--sub {
+    max-width: none;
+  }
+}

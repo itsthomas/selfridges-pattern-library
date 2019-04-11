@@ -1,0 +1,17 @@
+@import './text';
+
+.list {
+  @extend .text;
+  padding: 0;
+
+  @at-root ul#{&} li {
+    &:before {
+      content: '\2022\00A0';
+    }
+    list-style-type: none;
+  }
+
+  @at-root ol#{&} li {
+    list-style-position: inside;
+  }
+}

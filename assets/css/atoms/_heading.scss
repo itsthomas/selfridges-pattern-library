@@ -1,0 +1,46 @@
+@import '../helpers/colors';
+@import '../helpers/fonts';
+@import '../helpers/spacing';
+
+.heading {
+  color: $mine-shaft;
+  font-family: 'Avalon Bold', sans-serif;
+  font-size: 2.4rem;
+  letter-spacing: $letter-spacing;
+  margin: 0 0 14px 0;
+}
+
+.heading--sub {
+  @extend .heading;
+  font-size: 1.6rem;
+  margin: 0 0 10px 0;
+  text-transform: uppercase;
+}
+
+.heading--small {
+  @extend .heading--sub;
+  text-transform: none;
+}
+
+.heading--small--light {
+  @extend .heading--small;
+  font-family: 'Avalon Demi', sans-serif;
+}
+
+.heading--muted--small,
+.heading--sub--muted {
+  @extend .heading--sub;
+  color: $emperor;
+}
+
+.heading--highlight--sub,
+.heading--sub--hightlight {
+  @extend .heading--sub;
+  color: $monza;
+}
+
+.heading--muted--small,
+.heading--small--muted {
+  @extend .heading--small;
+  color: $gray;
+}

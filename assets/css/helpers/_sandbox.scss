@@ -1,0 +1,44 @@
+@import './colors';
+
+.sandbox__header {
+  margin-bottom: 50px;
+  text-align: center;
+  .sandbox__logo { width: 250px; }
+}
+
+.sandbox__swatch {
+  color: $white;
+  font-family: 'Avalon Demi', sans-serif;
+  font-size:2rem;
+  margin-bottom: 15px;
+  padding: 20px;
+  text-align:center;
+  width: 100%;
+}
+
+.row {
+  margin-bottom: 20px;
+}
+
+.sandbox__nav {
+  text-align: center;
+
+  .link {
+    margin: 0 10px;
+  }
+}
+
+// AEM overrides
+body {
+  padding-top: 30px !important;
+  padding-bottom: 50px;
+}
+
+.row {
+  background: none !important;
+}
+
+.container {
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+}

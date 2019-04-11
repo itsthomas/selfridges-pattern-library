@@ -1,0 +1,39 @@
+.order-summary {
+
+  &__toggle-promo {
+    cursor: pointer;
+    margin-bottom: 15px;
+  }
+
+  &__add-promo {
+    background: transparent;
+    height: 41px;
+    margin: 0;
+    min-height: auto;
+    padding: 0;
+    position: absolute;
+    right: 10px;
+    top: -12px;
+    width: auto;
+  }
+
+  &__add-promo:after {
+    content: '\02192';
+    font-weight: bold;
+    font: 2.2rem Arial, sans-serif;
+    padding-left: 8px;
+  }
+
+  &__promo-code {
+    cursor: pointer;
+  }
+
+  &__promo-code .icon {
+    padding-right: 7px;
+  }
+
+  &__promo-code .icon,
+  &__promo-code .text {
+    vertical-align: middle;
+  }
+}

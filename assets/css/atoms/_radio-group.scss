@@ -1,0 +1,70 @@
+@import '../helpers/colors';
+
+.radio-group {
+  align-items: center;
+  display: flex;
+  user-select: none;
+  width: auto;
+
+  & + [class*='text'] {
+    display: block;
+    padding-top: 10px;
+  }
+
+  &--error &__label {
+    border-top-color: $monza;
+    border-bottom-color: $monza;
+
+    &:first-child {
+      border-left-color: $monza;
+    }
+    &:last-child {
+      border-right-color: $monza;
+    }
+  }
+
+  &--error + [class*='text'] {
+    color: $monza;
+  }
+
+  &__label {
+    border: 1px solid $alto;
+    border-left: 0;
+    flex: 1;
+  }
+
+  &__label:first-child {
+    border-left: 1px solid $alto;
+  }
+
+  .control {
+    display: none;
+  }
+
+  .control + [class*='text'] {
+    display: block;
+    cursor: pointer;
+    font: 1.6rem 'Avalon Regular', sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 15px 5px 14px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .control:checked + [class*='text'] {
+    background: $emperor;
+    color: $white;
+    font-family: 'Avalon Demi', sans-serif;
+    outline: 1px solid $emperor;
+  }
+
+  .control:disabled + [class*='text'] {
+    color: $silver;
+    cursor: not-allowed;
+  }
+  .control:disabled:checked + [class*='text'] {
+    background: $gallery;
+    outline: 0;
+  }
+}

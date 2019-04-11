@@ -1,0 +1,9 @@
+@import '../helpers/colors';
+
+.badge,
+.badge--primary {
+  background: $candlelight;
+  font: 1.2rem 'Avalon Regular', sans-serif;
+  padding: 3px 10px;
+  text-transform: uppercase;
+}

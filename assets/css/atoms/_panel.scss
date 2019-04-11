@@ -1,0 +1,35 @@
+@import '../helpers/colors';
+
+.panel {
+  background: $alabaster;
+  padding: 20px;
+
+  .text {
+    line-height: 1.14;
+  }
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+.panel--small {
+  @extend .panel;
+  padding: 16px 10px;
+}
+
+.panel--emphasised {
+  @extend .panel;
+  border-bottom: 1px solid $silver;
+}
+
+.panel--clear {
+  @extend .panel;
+  background: transparent;
+  border: 1px solid $gallery;
+}
+
+.panel--clear--active {
+  @extend .panel--clear;
+  border: 1px solid $emperor;
+}

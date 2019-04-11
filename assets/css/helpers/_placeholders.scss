@@ -1,0 +1,19 @@
+@import '../helpers/colors';
+@import '../helpers/spacing';
+
+%button-base {
+  box-sizing: border-box;
+  color: $mine-shaft;
+  cursor: pointer;
+  letter-spacing: $letter-spacing;
+}
+
+%control-base {
+  -webkit-appearance: none;
+  background: transparent;
+  border-radius: 0;
+  color: $mine-shaft;
+  font: 1.6rem 'Avalon Regular';
+  outline: 0;
+  width: 100%;
+}
